@@ -12,12 +12,18 @@ import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 
 # ---------------- Arena config (edit these) ----------------
-W, H = 8, 8
-# A wall with a single gap at (4, 3) forces both robots through one bottleneck
-OBSTACLES = {(4, y) for y in range(H) if y != 3}
+W, H = 10, 10
+
+# Vertical wall at x=5 with a single gap at y=5, plus 4 blocks on each side
+OBSTACLES = (
+    {(5, y) for y in range(H) if y != 5}
+    | {(2, 2), (2, 3), (2, 7), (2, 8)}
+    | {(7, 2), (7, 3), (7, 7), (7, 8)}
+)
+
 ROBOTS = {
-    "R1": {"start": (0, 2), "goal": (7, 4), "park": (0, 5)},
-    "R2": {"start": (0, 4), "goal": (7, 2), "park": (0, 3)},
+    "R1": {"start": (0, 4), "goal": (9, 6), "park": (0, 6)},
+    "R2": {"start": (0, 6), "goal": (9, 4), "park": (0, 4)},
 }
 MAX_T = 80
 MOVES = [(0, 0), (1, 0), (-1, 0), (0, 1), (0, -1)]  # wait + 4 directions

@@ -20,6 +20,12 @@ LAYOUTS = {
         obstacles={(3, y) for y in range(8) if y != 2} | {(5, y) for y in range(8) if y != 5},
         robots={"R1": {"start": (0, 1), "goal": (7, 6), "park": (0, 2)},
                 "R2": {"start": (0, 6), "goal": (7, 1), "park": (0, 5)}}),
+    "narrow_gap_10x10": dict(
+        obstacles=({(5, y) for y in range(10) if y != 5}
+                   | {(2, 2), (2, 3), (2, 7), (2, 8)}
+                   | {(7, 2), (7, 3), (7, 7), (7, 8)}),
+        robots={"R1": {"start": (0, 4), "goal": (9, 6), "park": (0, 6)},
+                "R2": {"start": (0, 6), "goal": (9, 4), "park": (0, 4)}}),
 }
 
 rows = []
