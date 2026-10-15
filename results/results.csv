@@ -1,0 +1,7 @@
+layout,planner,collisions,makespan,total_steps
+gap_wall_crossing,baseline,12,19,36
+gap_wall_crossing,cooperative,0,19,37
+open_arena_crossing,baseline,2,27,54
+open_arena_crossing,cooperative,0,27,54
+two_walls,baseline,1,35,58
+two_walls,cooperative,0,35,58
