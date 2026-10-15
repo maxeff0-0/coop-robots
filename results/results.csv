@@ -3,5 +3,7 @@ gap_wall_crossing,baseline,12,19,36
 gap_wall_crossing,cooperative,0,19,37
 open_arena_crossing,baseline,2,27,54
 open_arena_crossing,cooperative,0,27,54
-two_walls,baseline,1,35,58
-two_walls,cooperative,0,35,58
+two_walls,baseline,1,33,56
+two_walls,cooperative,0,33,56
+narrow_gap_10x10,baseline,14,22,44
+narrow_gap_10x10,cooperative,0,23,45
